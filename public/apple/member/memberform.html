@@ -16,7 +16,7 @@ th, td {
 
 </head>
 <body>
-<form action="" method="post" id="form" name="form">
+<form action="./memberlist.html" method="post" id="form" name="form">
 <table border=1>
 
 		<tr>
@@ -25,7 +25,9 @@ th, td {
 				<input type="text" id="name" name="name "size="10"  placeholder="이름"></td>
 			<td>아이디</td>
 			<td>
-				<input type="text" id="id" name="id" size="12" placeholder="아이디"></td>
+				<input type="text" id="id" name="id" size="12" placeholder="아이디">
+				<input type="button" id="idcheck" name="idcheck" value="중복확인">
+				</td>
 		</tr>
 		<tr>
 			<td>비밀번호</td>
@@ -55,20 +57,41 @@ th, td {
 		</tr>
 		<tr>
 			<td>모바일(-포함)</td>
-			<td><input type="text" id="phone" name="phone" size="20" placeholder="-포함"></td>
+			<td>
+			<select>
+			<option>KT
+			<option>SKT
+			<option>LGU+
+			</select>
+			<select>
+			<option>010
+			<option>016
+			<option>019
+			</select>
+			
+			<input type="text" id="phone" name="phone" size="20" placeholder="모바일(-포함)"></td>
 			<td>모바일 마케팅 수신 동의</td>
 			<td><input type="radio" name="infoagree" value="동의" checked>동의
 				<input type="radio" name="infoagree" value="미동의">미동의</td>
 		</tr>
 		<tr>
 			<td>전화번호(-포함)</td>
-			<td><input type="text" id="phone2" name="phone2" size="20" placeholder="-포함"></td>
+			
+			<td>
+			
+			<select>
+			<option>02
+			<option>031
+			<option>021
+			<option>054
+			</select>
+			<input type="text" id="phone2" name="phone2" size="20" placeholder="전화번호(-포함)"></td>
 			<td>팩스번호(-포함)</td>
-			<td><input type="text" id="fax" name="fax" size="20" placeholder="-포함"></td>
+			<td><input type="text" id="fax" name="fax" size="20" placeholder="팩스번호(-포함)"></td>
 		</tr>
 		<tr>
 			<td>이메일</td>
-			<td><input type="text" id="email" name="email" placeholder="이메일"></td>
+			<td><input type="email" id="email" name="email" placeholder="이메일"></td>
 			<td>이메일 마케팅 수신 동의</td>
 			<td><input type="radio" name="emailagree" value="동의" checked>동의
 				<input type="radio" name="emailagree" value="미동의">미동의</td>
@@ -98,19 +121,39 @@ th, td {
 		<br>
 			<table border=1>
 		<tr>
-			<td>프로젝트 참여</td>
+			<td>번호</td>
 			<td>프로젝트명</td>
 			<td>프로젝트 참여기간</td>
 			<td>역할</td>
 			<td>발주사</td>
 		</tr>
 		<tr>
+			<td>1</td>
+			<td><input type="text" id="prjname" name="prjname" placeholder="프로젝트명" size=15> </td>
 			<td><input type="month" id="month" name="month" value="2022-01">
 			~
 			<input type="month" id="month2" name="month2" value="2022-01">
 			</td>
+			<td><input type="text" id="role" name="role" size=10 placeholder="역할"> </td>
+			<td><input type="text" id="orderer" name="orderer" size=10 placeholder="발주사"> </td>
+		</tr>
+		<tr>
+			<td>2</td>
 			<td><input type="text" id="prjname" name="prjname" placeholder="프로젝트명" size=15> </td>
-			<td><input type="number" id="prjnumber" name="prjnumber" size=10 min=1>개월</td>
+			<td><input type="month" id="month" name="month" value="2022-01">
+			~
+			<input type="month" id="month2" name="month2" value="2022-01">
+			</td>
+			<td><input type="text" id="role" name="role" size=10 placeholder="역할"> </td>
+			<td><input type="text" id="orderer" name="orderer" size=10 placeholder="발주사"> </td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><input type="text" id="prjname" name="prjname" placeholder="프로젝트명" size=15> </td>
+			<td><input type="month" id="month" name="month" value="2022-01">
+			~
+			<input type="month" id="month2" name="month2" value="2022-01">
+			</td>
 			<td><input type="text" id="role" name="role" size=10 placeholder="역할"> </td>
 			<td><input type="text" id="orderer" name="orderer" size=10 placeholder="발주사"> </td>
 		</tr>
@@ -122,15 +165,21 @@ th, td {
 		<table>
 		<tr>
 			<td>SNS</td>
-			<td>instagram,facebook</td>
+			<td><select>
+			<option>facebook
+			<option>instagram
+			<option>twitter
+			</select> 
+			<input type="text" id="SNS" name="sns" placeholder="SNS주소">
+			</td>
 			<td>사진</td>
-			<td><img src="./img01.jpg" width=100 height=100></td>
+			<td><input type="file" id="img" name="img">  </td>
 		</tr>
 		<tr>
 			<td>홈페이지</td>
-			<td>www.sjrnfl.com</td>
+			<td><input type="text" id="homepg" name="homepg" placeholder="홈페이지">  </td>
 			<td>직업(희망)</td>
-			<td>it개발자</td>
+			<td><input type="text" id="job" name="job" size="15" placeholder="직업(희망)"> </td>
 		</tr>
 		
 		
@@ -140,44 +189,66 @@ th, td {
 
 		<tr>
 			<td>취미(다중선택)</td>
-			<td colspan=3>게임,영화보기,음악감상</td>
+			<td colspan=3>
+			<input type="checkbox" id="hob" name="hob" value="운동">운동
+			<input type="checkbox" id="hob" name="hob" value="악기연주">악기연주
+			<input type="checkbox" id="hob" name="hob" value="게임">게임
+			<input type="checkbox" id="hob" name="hob" value="공예">공예(실뜨기등)
+			<input type="checkbox" id="hob" name="hob" value="등산">등산
+			<input type="checkbox" id="hob" name="hob" value="음악감상">음악감상
+			
+			</td>
 
 		</tr>
 		<tr>
 			<td>결혼여부</td>
-			<td>O</td>
+			<td><input type="radio" name="marry" value="O" checked>O
+				<input type="radio" name="marry" value="X">X</td>
 			<td>결혼기념일</td>
-			<td>2040년 4월 29일</td>
+			<td><input type="date" id="marrydate" name="marrydate"></td>
 		</tr>
 		<tr>
 			<td>자녀유무</td>
-			<td>1명(남)</td>
+			<td><input type="radio" id="son" name="son" value="없음" checked>없음
+			<input type="radio" id="son" name="son" value="1명">1명
+			<input type="radio" id="son" name="son" value="2명">2명
+			<input type="radio" id="son" name="son" value="3명">3명
+			  </td>
 			<td>좋아하는 색깔</td>
-			<td>하늘색(#50bcdf)</td>
+			<td><input type="color" id="color" name="color"> </td>
 		</tr>
 		<tr>
 			<td>본인소개</td>
-			<td colspan=3>안녕하세요 24살 컴퓨터공학과 졸업예정인 권순형입니다 잘부탁드립니다.</td>
+			<td colspan=3><input type="text" id="pr" name="pr" size="100" placeholder="자기소개"></td>
 
 		</tr>
 		<tr>
 			<td>개인정보유효기간</td>
-			<td colspan=3>3년</td>
+			<td colspan=3><input type="radio" id="ab" name="ab" value="1년" checked>1년
+			<input type="radio" id="ab" name="ab" value="3년">3년
+			<input type="radio" id="ab" name="ab" value="5년">5년
+			
 		</tr>
 
 
 	</table>
 
-
+<br>
+<br>
+ <input type="submit" value="제출">
+ </form>
+ <form action="./memberlist.html" method="post" id="form" name="form">
+ <input type="submit" value="목록">
 </form>
 
 
 
 
 
-memberform.html 
 
-input
+
+
+
 
 </body>
 </html>
