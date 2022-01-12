@@ -7,19 +7,32 @@
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
+	text-align: center;
+	table-layout:auto; 
+	height: 30px;
 }
 
 th, td {
 	padding: 10px;
 }
+#btn{
+background-color:#C8F0F7;
+
+border-radius:5px;
+}
+#body_color{
+background-color: #edecd5;
+}
 </style>
 
 </head>
-<body>
+<body id="body_color">
 <h1>회원리스트</h1>
+<hr style="background-color: blue;  height:2px;">
+<br>
 <!-- <a href="../../index.html">메인페이지</a>
 <hr> -->
-	<table border="1">
+	<table border="1" style="background-color: #F7f8b1;">
 		<tr>
 			<td>No.</td>
 			<td>이름</td>
@@ -72,7 +85,7 @@ th, td {
 	</table>
 	<form action="./memberform.html" method="post" id="form" name="form">
 	<br>
-	<input type="submit" value="등록">
+	<input type="submit" value="등록" id="btn" id="btn">
 	</form>
 </body>
 </html>

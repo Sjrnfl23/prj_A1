@@ -7,19 +7,31 @@
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
+	table-layout:auto; 
+	height: 40px;
 }
 
 th, td {
+
 	padding: 10px;
+	
+}
+#btn{
+background-color:#C8F0F7;
+
+border-radius:5px;
+}
+#body_color{
+background-color: #edecd5;
 }
 </style>
 
 </head>
 <body>
 <h1>회원가입</h1>
-<hr>
-<form action="./memberlist.html" method="post" id="form" name="form">
-<table border=1>
+<hr style="background-color: blue;  height:2px;">
+<form action="./memberlist.html" method="post" id="form" name="form"><br>
+<table border=1 style= "background-color: #ffc0cb;">
 
 		<tr>
 			<td>이름</td>
@@ -119,9 +131,9 @@ th, td {
 
 		</tr>
 		
-		</table>
+		</table >
 		<br>
-			<table border=1>
+			<table border=1 style= "background-color: #C8F0F7;">
 		<tr>
 			<td>번호</td>
 			<td>프로젝트명</td>
@@ -164,7 +176,7 @@ th, td {
 
 	</table>
 	<br>
-		<table>
+		<table style="background-color: #986BEA">
 		<tr>
 			<td>SNS</td>
 			<td><select>
@@ -237,10 +249,10 @@ th, td {
 
 <br>
 <br>
- <input type="submit" value="제출">
+ <input type="submit" value="제출" id=btn>
  </form>
  <form action="./memberlist.html" method="post" id="form" name="form">
- <input type="submit" value="목록">
+ <input type="submit" value="목록" id=btn>
 </form>
 
 

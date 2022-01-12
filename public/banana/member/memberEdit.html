@@ -7,17 +7,28 @@
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
+	table-layout:auto; 
+	height: 40px;
 }
 
 th, td {
 	padding: 10px;
 }
+#btn{
+background-color:#C8F0F7;
+
+border-radius:5px;
+}
+#body_color{
+background-color: #edecd5;
+}
 </style>
 
 </head>
-<body>
+<body id="body_color">
 <h1>회원수정</h1>
-<hr>
+<hr style="background-color: blue;  height:2px;">
+<br>
 <form action="./memberlist.html" method="post" id="form" name="form">
 <table border=1>
 
@@ -240,7 +251,7 @@ th, td {
 <br>
 
  
- <input type="submit" value="목록">
+ <input type="submit" value="목록" id="btn">
 </form>
 
 
