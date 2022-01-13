@@ -5,15 +5,26 @@
 <meta name="viewport content=width=dievice-width,initial-scale=1.0">
 <style type="text/css">
 table, th, td {
-	border: 1px solid black;
+	
+	border-top: 1px dotted black;
+	border-bottom: 1px dotted black;
 	border-collapse: collapse;
 	text-align: center;
 	table-layout:auto; 
 	height: 30px;
+	font-family: sans-serif;
 }
 
+th{
+
+font-weight: bold;
+font-style: italic;
+}
 th, td {
+	
 	padding: 10px;
+	
+	
 }
 #btn{
 background-color:#C8F0F7;
@@ -23,23 +34,28 @@ border-radius:5px;
 #body_color{
 background-color: #edecd5;
 }
+#body_backimg{
+background-image: url(./backimg01.png);
+background-size: cover;
+
+}
 </style>
 
 </head>
-<body id="body_color">
+<body id="body_backimg">
 <h1>회원리스트</h1>
 <hr style="background-color: blue;  height:2px;">
 <br>
 <!-- <a href="../../index.html">메인페이지</a>
 <hr> -->
-	<table border="1" style="background-color: #F7f8b1;">
+	<table style="background-color: #F7f8b1;">
 		<tr>
-			<td>No.</td>
-			<td>이름</td>
-			<td>아이디</td>
-			<td>전화번호</td>
-			<td>나이</td>
-			<td>이메일</td>
+			<th>No.</th>
+			<th>이름</th>
+			<th>아이디</th>
+			<th>전화번호</th>
+			<th>나이</th>
+			<th>이메일</th>
 		</tr>
 		<tr>
 			<td>1</td>
