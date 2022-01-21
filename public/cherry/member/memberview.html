@@ -8,6 +8,7 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	width: 800px;
+	
 }
 
 th, td {
@@ -23,7 +24,7 @@ th, td {
 
 <hr>
 
-	<table class="table" style="width: 800px;" border=1>
+	<table class="table"  style="width: 800px;" border=1>
 	
 	<colgroup>
 <col style="background-color:#e9ecef;">
@@ -32,6 +33,7 @@ th, td {
 <col>
 
 </colgroup>
+
 		<tr>
 			<td>이름</td>
 			<td>권순형</td>
@@ -112,9 +114,9 @@ th, td {
 	<br>
 		<table class="table" style="width: 800px;">
 			<colgroup>
-<col style="background-color:#e9ecef;">
+<col style="background-color:#e9ecef; font-weight:bold;">
 <col>
-<col style="background-color:#e9ecef;">
+<col style="background-color:#e9ecef; font-weight: bolder; ">
 <col>
 
 </colgroup>
@@ -169,7 +171,29 @@ th, td {
 	
 	
 	</a>
-	<a href="./memberEdit.html"><input type="button" class="btn btn-warning" name="" id="" value="수정"></a>
+	
+	<input type="button" class="btn btn-warning" name="" id="" data-bs-toggle="modal" data-bs-target="#edit" value="수정"> 
+	
+	<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"">
+        수정하시겠습니까?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <a href="./memberedit.html"><button type="button" class="btn btn-warning">수정</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	
 	<input type="button" class="btn btn-danger" name="" id="" data-bs-toggle="modal" data-bs-target="#delete" value="삭제"> 
 	
 	<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -183,8 +207,8 @@ th, td {
         정말 삭제하시겠습니까?
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="./memberlist.html"><button type="button" class="btn btn-danger">Delete</button></a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <a href="./memberlist.html"><button type="button" class="btn btn-danger">삭제</button></a>
       </div>
     </div>
   </div>
