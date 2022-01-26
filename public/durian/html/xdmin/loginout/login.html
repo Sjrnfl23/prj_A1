@@ -11,11 +11,14 @@
 
     <title>로그인</title>
     <style type="text/css">
+    /* @media screen and (min-width: 576px){
+   
+   } */
     .tbstyle{
-    margin:auto;
+    
     width:600px;
-    height:800px;
-    vertical-align:middle;
+    height:600px;
+    
     border:solid 1px gray;
     }
     
@@ -26,12 +29,13 @@
     </style>
   </head>
   <body>
-    <div style="padding:10px;"class="container tbstyle">
+    <div style="padding:10px;"class="container tbstyle h-100"> <!-- 반응형,테이블 바디 가운데 배치법 -->
     
       <div class="row content-justify-center">
     <div class="col">
-    <p>Login</p>
+    <h5 >Login</h5>
     </div>
+    
     </div>
     <div class="row content-justify-center">
     <div class="col">
@@ -40,7 +44,7 @@
       &nbspE-Mail Address
     </label>
     
-    <input type="text" class="form-control" id="email" name="email" placeholder="E-Mail" aria-describedby="passwordHelpInline">
+    <input type="text" class="form-control" id="email" name="email" placeholder="E-Mail" required>
     
     </div>
     </div>
@@ -48,15 +52,37 @@
    
     
      <div class="row content-justify-center">
-    <div class="col"></div>
+    <div class="col">
+    <label for="email">
+      &nbspPassword
+    </label>
+    
+    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
+    </div>
     </div>
     
      <div class="row content-justify-center">
-    <div class="col"></div>
+    <div class="col">
+    <input type="checkbox" id="remember" name="remember" value="remember"> 
+    <label for="remember">Remember Me</label>
+    
+    </div>
     </div>
     
      <div class="row content-justify-center">
-    <div class="col"></div>
+    <div class="col">
+    <div class="d-grid gap-2">
+ <button class="btn btn-primary" type="button" id="login" name="login" value="login">Login</button>
+  
+</div>
+    
+    </div>
+    </div>
+      <div class="row content-justify-center">
+    <div class="col">
+    <p style="text-align: center;">Don't have an account? <a href="../">Create One</a></p>
+    
+    </div>
     </div>
     
     
