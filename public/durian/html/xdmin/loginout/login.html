@@ -12,13 +12,7 @@
     <title>로그인</title>
     <style type="text/css">
    
-      @media screen and (max-width: 576px){
-  .tbstyle{
-  width:30%;
-   border:solid 1px gray;
-  } 
- 
- }
+    
 
     .tbstyle{
     
@@ -32,13 +26,22 @@
     margin:5px;
     padding:5px;
     }
+      @media screen and (max-width: 576px){
+  .tbstyle{
+  width:90%;
+   border:solid 1px gray;
+  } 
+ 
+ }
     </style>
   </head>
   <body>
- 
-
-    <div style="padding:10px;"class="container tbstyle h-100"> <!-- 반응형,테이블 바디 가운데 배치법 -->
+ <br>
+<img src="../xdmin_images/login.png" class="rounded mx-auto d-block" style="margin:auto;">
+<br>
+    <div style="padding:10px;"class="container-sm tbstyle"> <!-- 반응형,테이블 바디 가운데 배치법 -->
     <form method="get" action="" id="form" name="form" enctype="">
+    
       <div class="row content-justify-center">
     <div class="col">
     <h5 >Login</h5>
@@ -46,7 +49,7 @@
     
     </div>
     <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
    
      <label for="email">
       &nbspE-Mail Address
@@ -60,7 +63,7 @@
    
     
      <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
     <label for="pwd">
       &nbspPassword
     </label>
@@ -70,7 +73,7 @@
     </div>
     
      <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
     <div>
     <input type="checkbox" id="remember" name="remember" value="remember"> 
     <label for="remember">Remember Me</label>
@@ -80,7 +83,7 @@
     </div>
     
      <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
     <div class="d-grid gap-2">
  <button class="btn btn-primary" type="button" id="login" name="login" value="login">Login</button>
   
@@ -89,7 +92,7 @@
     </div>
     </div>
       <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
     <p style="text-align: center;">Don't have an account? <a href="">Create One</a></p>
     
     </div>
