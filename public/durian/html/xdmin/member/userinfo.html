@@ -14,10 +14,7 @@
 	crossorigin="anonymous">
 
 <style type="text/css">
-/*   @media screen and (min-width: 576px){
   
-   
-   } */
 .btn-size {
 	width: 40px;
 	height: 40px;
@@ -31,6 +28,13 @@
 	text-align: center;
 	margin: auto;
 }
+
+    @media screen and (max-width: 576px){
+.table-responsive-sm{
+width:100%;
+}
+
+ }
 </style>
 <title>회원 관리 페이지</title>
 <!-- margin 오른쪽,회원 리스트 td창 작게(컨텐츠에 알맞게)-->
@@ -108,6 +112,7 @@
 						<option value="3">Three</option>
 					</select>
 				</div>
+				
 				<div class="col-md-2 col-6">
 					<input type="text" class="form-control" id="firstdate"
 						name="firstdate" placeholder="시작일">
@@ -133,14 +138,14 @@
 						name="firstdate" placeholder="검색어">
 
 				</div>
-				<div style="margin: 3px;" class="col">
+				<div style="margin:3px;" class="col">
 					<button style="padding: 5px;" class="btn btn-warning " id="delete"
-						name="delete">
-						<img src="../../images/delete.png">
+						name="delete">검색
+						
 					</button>
-					<button style="padding: 5px;" class="btn btn-danger " id="delete"
-						name="delete">
-						<img src="../../images/delete.png">
+					<button style="margin:3px ;padding: 5px;" class="btn btn-danger " id="delete"
+						name="delete">초기화
+						
 					</button>
 				</div>
 
@@ -148,8 +153,8 @@
 
 		</div>
 		
-		<div>
-			<p style="width: 20%; float: left;" class="margin">Total: 12,356</p>
+	
+			<div style="float:right;">
 			<select class="form-select" style="width: 100px; float: right;"
 				aria-label="Default select example">
 				<option selected>10</option>
@@ -158,8 +163,9 @@
 				<option value="3">40</option>
 			</select>
 		</div>
-
-		<table border="1" class="table table-bordered table-striped margin">
+<div class="table-responsive-sm">
+		<table border="1" class="table caption-top table-bordered table-striped margin">
+		  <caption>Total: 12,356</caption>
 			<thead class="table-dark">
 				<tr>
 					<th><input type="checkbox" id="" name=""
@@ -240,6 +246,7 @@
 			</tr>
 
 		</table>
+	</div>
 		<nav aria-label="Page navigation example">
 			<ul class="pagination justify-content-center">
 				<li class="page-item"><a class="page-link" href="#"
