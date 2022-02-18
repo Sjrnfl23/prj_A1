@@ -252,7 +252,7 @@ label {
 	<div class="row">
 
 			<div class="col-6">
-				<label for="name">*이름</label>
+				<label for="name">전화번호</label>
 				<div class="input-group mb-3">
 
 					<input type="text" class="form-control" id="name" name="name"
@@ -262,7 +262,34 @@ label {
 
 			</div>
 			<div class="col-6">
-				<label for="name_eng">*이름(영문)</label>
+				<label for="name_eng">팩스번호</label>
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" id="name_eng"
+						name="name_eng" required>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-6">
+				<label for="name">거주국가</label>
+				<div class="input-group mb-3">
+
+					<select class="form-select" id="gender" name="gender" aria-label="gender">
+						<option selected>::선택::</option>
+						<option value="1">남자</option>
+						<option value="2">여자</option>
+						<option value="3">기타</option>
+					</select>
+				</div>
+
+
+			</div>
+			<div class="col-6">
+				<label for="name_eng">Datalist Example</label>
 				<div class="input-group mb-3">
 					<input type="text" class="form-control" id="name_eng"
 						name="name_eng" required>

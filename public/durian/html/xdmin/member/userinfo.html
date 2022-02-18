@@ -33,6 +33,9 @@
 .table-responsive-sm{
 width:100%;
 }
+.aa{
+
+}
 
  }
 </style>
@@ -43,10 +46,37 @@ width:100%;
 <body>
  
    
-    <div class="dropdown">
+ 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col" style="margin-top:10px;">
+			
+				<span style="font-weight: bold;  font-size: 20px;">ABC
+					MANAGEMENT System
+					
+					</span>
+					
+				
+			
+			
+				<div style="float:right;" >
+					<select class="form-select" aria-label="Default select example">
+						<option selected>언어</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				
+		
+   		
+				
+				</div>
+				
+				
+ <span class="dropdown d-none d-sm-block" style="float:right; margin-right:15px;">
       <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
+        <strong>Manager</strong>
       </a>
       <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
         <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -55,29 +85,10 @@ width:100%;
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="#">Sign out</a></li>
       </ul>
-    </div>
- 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div style="font-weight: bold;  font-size: 20px;">ABC
-					MANAGEMENT System</div>
-				
-			
-				<div style="float:right;">
-					<select class="form-select" aria-label="Default select example">
-						<option selected>언어</option>
-						<option value="1">One</option>
-						<option value="2">Two</option>
-						<option value="3">Three</option>
-					</select>
-				
-				</div>
-				
-				
-
+    </span>
 
 			</div>
+			
 		</div>
 
 	</div>
@@ -182,6 +193,9 @@ width:100%;
 <div class="table-responsive-sm">
 		<table border="1" class="table caption-top table-bordered table-striped margin">
 		  <caption>Total: 12,356</caption>
+		<!--   <colgroup>
+		  <col style="display:inline;">
+		  </colgroup> -->
 			<thead class="table-dark">
 				<tr>
 					<th><input type="checkbox" id="" name=""
@@ -296,10 +310,13 @@ width:100%;
 			<!-- <input type="button" style="float:left" class="btn-danger" id="delete" name="delete"> -->
 		</div>
 		<br> <br> <br>
-		<div style="background-color: #F8F9FA; margin: 10px; height: 200px;"
+		<div style="background-color: #F8F9FA; margin: 10px; height: 200px; "
 			class="text">
 			<div>
-				<p style="margin: auto;">(주)xx컴퍼니 서울시 xx구 yy로 352-3 하이젠빌딩</p>
+			<br>
+			<br>
+			<br>
+				<p style="margin: auto; margin-bottom:3px;">(주)xx컴퍼니 서울시 xx구 yy로 352-3 하이젠빌딩</p>
 				<p style="margin: auto;">Copyright 2014,index Inc. all rights
 					reserved</p>
 			</div>
