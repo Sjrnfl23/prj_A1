@@ -17,6 +17,9 @@
 label {
 	margin-bottom: 5px;
 }
+div{
+margin-top:15px;
+}
 
 </style>
 <!-- <link href="sidebar2.css" rel="stylesheet"> -->
@@ -162,7 +165,7 @@ label {
 				<div class="input-group mb-3">
 
 					<input type="text" class="form-control" id="name" name="name"
-						required>
+						required placeholder="이름">
 				</div>
 
 
@@ -171,7 +174,7 @@ label {
 				<label for="name_eng">*이름(영문)</label>
 				<div class="input-group mb-3">
 					<input type="text" class="form-control" id="name_eng"
-						name="name_eng" required>
+						name="name_eng"placeholder="이름(영문)">
 				</div>
 
 			</div>
@@ -206,7 +209,7 @@ label {
 	<div class="row">
 			<div class="col-6">
 				<label for="gender">*이메일</label>
-	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender">
+	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender" placeholder="이메일">
 						
 			</div>
 
@@ -229,7 +232,7 @@ label {
 	<div class="row">
 			<div class="col-6">
 				<label for="gender">*핸드폰</label>
-	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender">
+	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender" placeholder="핸드폰">
 						
 			</div>
 
@@ -256,7 +259,7 @@ label {
 				<div class="input-group mb-3">
 
 					<input type="text" class="form-control" id="name" name="name"
-						required>
+						required placeholder="전화번호">
 				</div>
 
 
@@ -265,7 +268,7 @@ label {
 				<label for="name_eng">팩스번호</label>
 				<div class="input-group mb-3">
 					<input type="text" class="form-control" id="name_eng"
-						name="name_eng" required>
+						name="name_eng" placeholder="팩스번호" required>
 				</div>
 
 			</div>
@@ -298,6 +301,81 @@ label {
 			</div>
 
 		</div>
+		
+		<div class="row">
+		<div class="col-6">
+		<label for="">주소</label>
+		 <div class="input-group mb-3">
+		 
+        
+        <input v-model="address.address1"
+               type="text" class="form-control" placeholder="주소">
+        <div class="input-group-append">
+            <button @click="clickOpenAddressModal" class="btn btn-outline-secondary" type="button">주소검색</button>
+            
+            
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input v-model="address.address2" type="text" class="form-control" placeholder="상세주소">
+    </div>
+		
+		</div>
+			<div class="col-6">
+				<label for="desc">설명</label>
+				<div class="input-group mb-3">
+					<textarea class="form-control"id="desc" rows="4"></textarea>
+				</div>
+
+			</div>
+		
+		
+	</div>
+	<br>
+	
+	<div id="wrap">
+	
+	
+	
+	<div class="row">
+	<div class="col-3">
+	<label for=""></label>
+	<input type="text" class="form-control" id="" name="" readonly>
+	
+	
+	
+	</div>
+	
+	<div class="col-3">
+	<label for=""></label>
+	<input type="text" class="form-control" id="" name="" readonly>
+	
+	
+	
+	</div>
+	
+	<div class="col-3">
+	<label for=""></label>
+	<input type="text" class="form-control" id="" name="" readonly>
+	
+	
+	
+	</div>
+	
+	<div class="col-3">
+	<label for=""></label>
+	<input type="text" class="form-control" id="" name="" readonly>
+	
+	
+	
+	</div>
+	
+	
+	</div>
+	
+	
+	</div>
 	
 	</div>
 
