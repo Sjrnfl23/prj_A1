@@ -30,10 +30,17 @@
 }
 
     @media screen and (max-width: 576px){
-.table-responsive-sm{
-width:100%;
-}
-.aa{
+    
+	.table-responsive-sm{
+		width:100%;
+	}
+	
+/* .aa{
+
+} */
+
+a{
+text-decoration:none;
 
 }
 
@@ -294,19 +301,17 @@ width:100%;
 		</nav>
 
 		<div class="margin">
-			<button style="float: left; padding: 5px;" class="btn btn-danger "
-				id="delete" name="delete">
-				<img src="../../images/delete.png">
-			</button>
+			<a style="float: right; padding: 5px;" class="btn btn-danger "
+				id="delete" href="#">
+				
+				삭제
+			</a>
 
-			<button style="float: right; padding: 5px; margin-right: 5px;"
-				class="btn btn-success " id="delete" name="delete">
-				<img src="../../images/delete.png">
-			</button>
-			<button style="float: right; padding: 5px; margin-right: 5px;"
-				class="btn btn-primary " id="add" name="add">
-				<img src="../../images/delete.png">
-			</button>
+			<a style="float: right; padding: 5px; margin-right: 5px;"
+				class="btn btn-success" id="edit" href="#">
+				수정
+			</a>
+			
 			<!-- <input type="button" style="float:left" class="btn-danger" id="delete" name="delete"> -->
 		</div>
 		<br>
