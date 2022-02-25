@@ -26,33 +26,90 @@
     margin:5px;
     padding:5px;
     }
+    
+     a{
+  text-decoration:none;
+  }
+   button{
+  height:50px;
+  }
+ 
+  
       @media screen and (max-width: 576px){
   .tbstyle{
   width:90%;
   /*  border:solid 1px gray; */
   } 
  
+ 
  }
     </style>
   </head>
   <body>
- <br>
-<img src="../xdmin_images/login.png" class="rounded mx-auto d-block" style="margin:auto;">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+			
+				<span style="font-weight: bold;  font-size: 25px;">ABC
+					MANAGEMENT System
+						
+					</span>
+					
+				
+			
+			
+				<div style="float:right;" >
+					<select class="form-select" aria-label="Default select example">
+						<option selected>언어</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				
+		
+   		
+				
+				</div>
+				
+				
+ <span class="dropdown d-none d-sm-block" style="float:right; margin-right:15px;">
+      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>Manager</strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </span>
+
+			</div>
+			
+		</div>
+
+	</div>
+				
+<img src="../xdmin_images/aladinLogo.jpg" class="rounded mx-auto d-block" style="margin:auto;">
 <br>
+
     <div style="padding:10px;"class="container-sm tbstyle"> <!-- 반응형,테이블 바디 가운데 배치법 -->
     <form method="get" action="" id="form" name="form" enctype="">
     
       <div class="row content-justify-center">
     <div class="col">
-    <h5 >Login</h5>
+    <h5>로그인</h5>
     </div>
     
     </div>
     <div class="row content-justify-center">
     <div class="col-">
    
-     <label for="email">
-      &nbspE-Mail Address
+     <label for="email" style="margin-bottom:10px;">
+      <!-- &nbspE-Mail Address -->아이디
     </label>
     
     <input type="text" class="form-control" id="email" name="email" placeholder="E-Mail" required>
@@ -64,8 +121,8 @@
     
      <div class="row content-justify-center">
     <div class="col-">
-    <label for="pwd">
-      &nbspPassword
+    <label for="pwd" style="margin-bottom:10px;">
+      비밀번호
     </label>
     
     <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" required>
@@ -76,15 +133,19 @@
     <div class="col-">
     <div>
     <input type="checkbox" id="remember" name="remember" value="remember"> 
-    <label for="remember">Remember Me</label>
-    <a href=""style="float:right;">Forgot Password?</a>
+    
+    <label for="remember">아이디 저장</label>
+    
+    <a href="userform.html"style="float:right;">비밀번호를 잊으셨나요?</a>
     </div>
     </div>
     </div>
     
      <div class="row content-justify-center">
     <div class="col-">
+    
     <div class="d-grid gap-2">
+    
  <button class="btn btn-primary" type="button" id="login" name="login" value="login">Login</button>
   
 </div>
@@ -92,10 +153,18 @@
     </div>
     </div>
       <div class="row content-justify-center">
+      
+      
+      
     <div class="col-">
-    <p style="text-align: center;">Don't have an account? <a href="userform.html">Create One</a></p>
+    
+    <p style="text-align: center;">계정이 없으신가요? <a href="userform.html">회원가입 하기</a></p>
     
     </div>
+    
+    
+    
+    
     </div>
     
     
