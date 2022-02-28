@@ -31,7 +31,7 @@
   text-decoration:none;
   }
    button{
-  height:50px;
+  height:45px;
   }
  
   
@@ -73,7 +73,7 @@
 				</div>
 				
 				
- <span class="dropdown d-none d-sm-block" style="float:right; margin-right:15px;">
+ <span class="dropdown d-none d-sm-block" style="float:right; margin-right:15px; margin-top:12px;">
       <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
         <strong>Manager</strong>
@@ -92,7 +92,7 @@
 		</div>
 
 	</div>
-				
+		<br>		
 <img src="../xdmin_images/aladinLogo.jpg" class="rounded mx-auto d-block" style="margin:auto;">
 <br>
 
@@ -100,7 +100,7 @@
     <form method="get" action="" id="form" name="form" enctype="">
     
       <div class="row content-justify-center">
-    <div class="col">
+    <div class="col-">
     <h5>로그인</h5>
     </div>
     
@@ -112,7 +112,7 @@
       <!-- &nbspE-Mail Address -->아이디
     </label>
     
-    <input type="text" class="form-control" id="email" name="email" placeholder="E-Mail" required>
+    <input type="text" class="form-control" id="email" name="email" placeholder="ID" required>
     
     </div>
     </div>
@@ -136,7 +136,8 @@
     
     <label for="remember">아이디 저장</label>
     
-    <a href="userform.html"style="float:right;">비밀번호를 잊으셨나요?</a>
+    <a href="userform.html"style="float:right;" class="d-none d-sm-block">비밀번호를 잊으셨나요?</a>
+    <a href="userform.html"style="float:right;" class="d-sm-none d-mb-block">비밀번호 찾기</a>
     </div>
     </div>
     </div>
@@ -146,7 +147,31 @@
     
     <div class="d-grid gap-2">
     
- <button class="btn btn-primary" type="button" id="login" name="login" value="login">Login</button>
+ <button class="btn btn-primary" style="margin-bottom:-25px;" type="button" id="login" name="login" value="login">로그인</button>
+  
+</div>
+    
+    </div>
+    </div>
+    
+     <div class="row content-justify-center">
+    <div class="col-">
+    
+    <div class="d-grid gap-2">
+    
+ <button class="btn btn-success" style="margin-bottom:-25px;" type="button" id="login" name="login" value="login">네이버 로그인</button>
+  
+</div>
+    
+    </div>
+    </div>
+    
+     <div class="row content-justify-center">
+    <div class="col-">
+    
+    <div class="d-grid gap-2">
+    
+ <button class="btn btn-warning" type="button" id="login" name="login" value="login">카카오 로그인</button>
   
 </div>
     
