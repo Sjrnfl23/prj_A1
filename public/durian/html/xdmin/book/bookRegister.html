@@ -21,7 +21,7 @@ label {
 
 </style>
 <!-- <link href="sidebar2.css" rel="stylesheet"> -->
-<link href="sidebars.css" rel="stylesheet">
+<link href="../styleSheets/sidebars.css" rel="stylesheet">
 <title>회원 가입 페이지</title>
 </head>
 <!-- d-none d-sm-block -->
@@ -125,22 +125,20 @@ label {
 		<div>
 	
 		<br>
-		<div class="h2">&nbsp회원가입</div>
-		<!-- <div style="float: right;">*항목은 필수입니다.</div> -->
+		<div class="h2" style="text-align:center;">책 등록</div>
+		<hr>
 	
 	</div>
 <br> 
 		<div class="row">
 
-			<div class="col-10 col-sm-6">
-				<label for="id">&nbspID</label>
+			<div class="col-11 col-sm-6">
+				<label for="id">&nbsp책 이름</label>
 				<div class="input-group mb-3">
 
-					<input type="text" class="form-control" id="id" name="id"
-						placeholder="ID" aria-label="Recipient's username"
-						aria-describedby="button-addon2" required>
-					<button class="btn btn-outline-primary" type="button"
-						id="button-addon2">중복확인</button>
+					<input type="text" class="form-control" id="id" name="prjTitle"
+						placeholder="책 이름" >
+					
 				</div>
 			</div>
 
@@ -148,58 +146,40 @@ label {
 
 
 		<div class="row">
-			<div class="col-6">
-				<label for="pwd">비밀번호</label>
+			<div class="col-11">
+				<label for="prjOriginalTitle">원제</label>
 				<div class="input-group mb-3">
 
-					<input type="password" class="form-control" id="pwd" name="pwd"
-						placeholder="비밀번호" required>
+					<input type="text" class="form-control" id=prjOriginalTitle" name="prjOriginalTitle"
+						placeholder="원제" required>
 				</div>
 			</div>
 
-			<div class="col-6">
-				<label for="pwd_check">비밀번호 확인</label>
-				<div class="input-group mb-3">
-
-					<input type="password" class="form-control" id="pwd_check"
-						name="pwd_check" placeholder="비밀번호 확인" required>
-				</div>
-			</div>
+			
 
 		</div>
 		<div class="row">
 
-			<div class="col-6">
-				<label for="name">이름</label>
+			<div class="col-11">
+				<label for="name">작가</label>
 				<div class="input-group mb-3">
 
-					<input type="text" class="form-control" id="name" name="name"
-						required placeholder="이름">
+					<input type="text" class="form-control" id="pjbaAuthorName" name="name"
+						 placeholder="작가">
 				</div>
 
 
 			</div>
-			<div class="col-6">
-				<label for="name_eng">이름(영문)</label>
-				<div class="input-group mb-3">
-					<input type="text" class="form-control" id="name_eng"
-						name="name_eng"placeholder="이름(영문)">
-				</div>
-
-			</div>
+			
 
 		</div>
 
 
 		<div class="row">
 			<div class="col-6">
-				<label for="gender">성별</label>
-	<select class="form-select" id="gender" name="gender" aria-label="gender">
-						<option selected>::선택::</option>
-						<option value="1">남자</option>
-						<option value="2">여자</option>
-						<option value="3">기타</option>
-					</select>
+				<label for="gender">옮긴이</label>
+	<input class="form=control" type="text" id="gender" name="" aria-label="">
+						
 			</div>
 
 	
