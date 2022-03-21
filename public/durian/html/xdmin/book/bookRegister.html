@@ -22,7 +22,7 @@ label {
 </style>
 <!-- <link href="sidebar2.css" rel="stylesheet"> -->
 <link href="../styleSheets/sidebars.css" rel="stylesheet">
-<title>회원 가입 페이지</title>
+<title>책 등록 페이지</title>
 </head>
 <!-- d-none d-sm-block -->
 <body>
@@ -141,12 +141,7 @@ label {
 					
 				</div>
 			</div>
-
-		</div>
-
-
-		<div class="row">
-			<div class="col-11">
+				<div class="col-11 col-sm-6">
 				<label for="prjOriginalTitle">원제</label>
 				<div class="input-group mb-3">
 
@@ -155,222 +150,144 @@ label {
 				</div>
 			</div>
 
-			
-
 		</div>
+
+
+	
 		<div class="row">
 
-			<div class="col-11">
+			<div class="col-11 col-sm-6">
 				<label for="name">작가</label>
+				
 				<div class="input-group mb-3">
 
 					<input type="text" class="form-control" id="pjbaAuthorName" name="name"
 						 placeholder="작가">
-				</div>
+				
 
 
 			</div>
 			
 
 		</div>
-
+		
+	<div class="col-11 col-sm-6" >
+			
+				<label for="pjbcName">옮긴이</label>
+				
+				<div class="input-group mb-3">
+				
+	<input  type="text"  class="form-control"  id="pjbcName" name="pjbcName" placeholder="옮긴이" >
+	
+				</div>	
+					
+			</div>
+			
+			</div>
 
 		<div class="row">
-			<div class="col-6">
-				<label for="gender">옮긴이</label>
-	<input class="form=control" type="text" id="gender" name="" aria-label="">
-						
-			</div>
+		
+		
 
 	
 
-		<div class="col-6">
-			<label for="birthday">생일</label>
+		<div class="col-11 col-sm-6">
+			<label for="birthday">출판사</label>
 			<div class="input-group mb-3">
-				<input type="date" class="form-control" id="birthday"
-					name="brithday" required>
+				<input type="text" class="form-control" id="birthday"
+					name="brithday" placeholder="출판사">
 			</div>
 
 		</div>
 		
-	</div>		
-	
-	<div class="row">
-			<div class="col-6">
+		<div class="col-11 col-sm-6">
 				<label for="gender">이메일</label>
 	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender" placeholder="이메일">
 						
 			</div>
-
-	
-
-		<div class="col-6">
-			<label for="birthday">이메일 정보 마케팅 사용 동의</label>
-			<div class="input-group mb-3">
-				<input type="radio" class="btn-check" name="emailagree" id="emailagree" value="동의" checked>
 			
-			<label class="btn btn-outline-success" for="emailagree">동의</label>
-				<input type="radio" name="emailagree" class="btn-check" id="emaildisagree" value="미동의">
-				<label class="btn btn-outline-danger" for="emaildisagree">미동의</label>
-			</div>
-
-		</div>
-		
 	</div>		
 	
-	<div class="row">
-			<div class="col-6">
-				<label for="gender">핸드폰</label>
-	<input class="form-control" type="text" id="gender" name="gender" aria-label="gender" placeholder="핸드폰">
-						
+	<div class="row" style="margin-top:6px; margin-bottom:6px;">
+			
+		<div class="col-6">
+				<label for="Price">가격</label>
+	<input class="form-control" type="text" id="Price" name="Price	" aria-label="gender" placeholder="가격">
+					</div>		
+							<div class="col-6">
+							
+				<label for="page">페이지수</label>
+	<input class="form-control" type="text" id="page" name="page" aria-label="gender" placeholder="핸드폰">	
 			</div>
 
 	
 
-		<div class="col-6">
-			<label for="birthday">핸드폰 정보 마케팅 사용 동의</label>
-			<div class="input-group mb-3">
-				<input type="radio" class="btn-check" name="phoneagree" id="phoneagree" value="동의" checked>
-			
-			<label class="btn btn-outline-success" for="phoneagree">동의</label>
-				<input type="radio" name="phoneagree" class="btn-check" id="phonedisagree" value="미동의">
-				<label class="btn btn-outline-danger" for="phonedisagree">미동의</label>
-			</div>
+		
+		
 
-		</div>
 		
 	</div>		
 	
 	<div class="row">
 
-			<div class="col-6">
-				<label for="name">전화번호</label>
+			<div class="col-11 col-sm-6">
+				<label for="name">ISBN</label>
 				<div class="input-group mb-3">
 
 					<input type="text" class="form-control" id="name" name="name"
-						required placeholder="전화번호">
+						required placeholder="ISBN">
 				</div>
 
 
 			</div>
-			<div class="col-6">
-				<label for="name_eng">팩스번호</label>
-				<div class="input-group mb-3">
-					<input type="text" class="form-control" id="name_eng"
-						name="name_eng" placeholder="팩스번호" required>
-				</div>
-
+			<div class="col-11 col-sm-6">
+				<label for="photo">사진 첨부</label>
+				<input type="file" class="form-control" id="photo" name="photo">
+				
 			</div>
 
 		</div>
 		
-		<div class="row">
-
-			<div class="col-6">
-				<label for="name">거주국가</label>
-				<div class="input-group mb-3">
-
-					<select class="form-select" id="gender" name="gender" aria-label="gender">
-						<option selected>::선택::</option>
-						<option value="1">남자</option>
-						<option value="2">여자</option>
-						<option value="3">기타</option>
-					</select>
-				</div>
-
-
-			</div>
-			<div class="col-6">
-				<label for="name_eng">Datalist Example</label>
-				<div class="input-group mb-3">
-					<input type="text" class="form-control" id="name_eng"
-						name="name_eng" required>
-				</div>
-
-			</div>
-
-		</div>
+		<div class="row" style="margin-top:15px;">
 		
-		<div class="row">
-		<div class="col-6">
-		<label for="">주소</label>
-		 <div class="input-group mb-3">
-		 
-        
-        <input v-model="address.address1"
-               type="text" class="form-control" placeholder="주소">
-        <div class="input-group-append">
-            <button @click="clickOpenAddressModal" class="btn btn-outline-secondary" type="button">주소검색</button>
-            
-            
-        </div>
-    </div>
-
-    <div class="input-group mb-3">
-        <input v-model="address.address2" type="text" class="form-control" placeholder="상세주소">
-    </div>
+		<div class="col-11 col-sm-6">
+		
+		<label for="index">목차</label>
+		<input type="text" class="form-control" id="index" name="index" placeholder="1초반 2중반 3후반 4결말">
 		
 		</div>
-			<div class="col-6">
-				<label for="desc">설명</label>
-				<div class="input-group mb-3">
-					<textarea class="form-control"id="desc" rows="4"></textarea>
-				</div>
-
-			</div>
 		
 		
-	</div>
+		</div>
+		
+		<br>
+		<div class="col-11 col-sm-6">
+		<label for="bookIntroduce">책소개</label>
+		<textarea class="form-control" id="bookIntroduce" name="bookIntroduce" placeholder="0/80">
+		
+		</textarea>
+		</div>
+		
+		
+		
+		
+		<div class="col-11 col-sm-6" style="margin-top:15px;">
+		<label for="authorIntroduce">저자소개</label>
+		<textarea class="form-control" id="authorIntroduce" name="authorIntroduce" placeholder="0/80">
+		
+		</textarea>
+		
+</div>
 	<br>
 	
-	<div id="wrap">
 	
-	
-	
-	<div class="row">
-	<div class="col-6 col-sm-3">
-	<label for="">최종수정자</label>
-	<input type="text" class="form-control" id="" name="" readonly>
-	
-	
-	
-	</div>
-	
-	<div class="col-6 col-sm-3">
-	<label for="">최초수정일</label>
-	<input type="text" class="form-control" id="" name="" readonly>
-	
-	
-	
-	</div>
-	
-	<div class="col-6 col-sm-3">
-	<label for="">최초등록자</label>
-	<input type="text" class="form-control" id="" name="" readonly>
-	
-	
-	
-	</div>
-	
-	<div class="col-6 col-sm-3">
-	<label for="">최초등록일</label>
-	<input type="text" class="form-control" id="" name="" readonly>
-	
+	<button style="float:right;" class="btn btn-primary">등록</button>
 	
 	
 	</div>
 	
 	
-	</div>
-	<br>
-	<div style="float:right;">
-	<button  class="btn btn-primary">등록</button>
-	</div>
 	
-	</div>
-	
-	
-	</div>
 
 </main>
     <script src="../sidebars.js" type="text/javascript"></script>
